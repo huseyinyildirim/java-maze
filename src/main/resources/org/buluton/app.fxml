@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.buluton.App">
+   <children>
+      <SplitPane dividerPositions="0.12871287128712872" orientation="VERTICAL" prefHeight="600.0" prefWidth="1100.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="24.0" prefWidth="604.0">
+               <children>
+                  <Button layoutX="14.0" layoutY="22.0" mnemonicParsing="false" onAction="#btnRead" text="Oku" />
+                  <Button layoutX="75.0" layoutY="22.0" mnemonicParsing="false" onAction="#btnSolved" text="Çöz" />
+                  <Button layoutX="218.0" layoutY="22.0" mnemonicParsing="false" onAction="#btnExit" text="Kapat" />
+                  <Button layoutX="136.0" layoutY="22.0" mnemonicParsing="false" onAction="#btnClear" text="Temizle" />
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="567.0">
+               <children>
+                  <Label fx:id="lblWidth" layoutX="56.0" layoutY="16.0" text="0" />
+                  <Label fx:id="lblHeight" layoutX="161.0" layoutY="16.0" text="0" />
+                  <Label layoutX="6.0" layoutY="16.0" text="Genişlik:" underline="true" />
+                  <Label layoutX="100.0" layoutY="16.0" text="Yükseklik:" underline="true" />
+
+
+                   <Label fx:id="lblStart" layoutX="291.0" layoutY="16.0" text="0, 0" />
+                   <Label fx:id="lblExit" layoutX="391.0" layoutY="16.0" text="0, 0" />
+                   <Label layoutX="256.0" layoutY="16.0" text="Giriş:" underline="true" />
+                   <Label layoutX="350.0" layoutY="16.0" text="Çıkış:" underline="true" />
+
+                  <Canvas fx:id="canvas" height="470.0" layoutY="46.0" width="1100.0" />
+               </children>
+          </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</Pane>
